@@ -1,0 +1,25 @@
+shared:
+  caches:
+    - name: default
+      maxSize: 5000
+      ttl: 300
+      timeIdle: 0
+      evictionPolicy: LFU
+      backupCount: 1
+      inMemoryFormat: BINARY
+
+    - name: TIME_IDLE_CACHE
+      maxSize: 1000
+      ttl: 0
+      timeIdle: 1800
+      evictionPolicy: LFU
+      backupCount: 1
+      inMemoryFormat: BINARY
+
+    - name: LRU_CACHE
+      maxSize: 30000
+      ttl: 15
+      timeIdle: 0
+      evictionPolicy: LRU
+      backupCount: 1
+      inMemoryFormat: BINARY

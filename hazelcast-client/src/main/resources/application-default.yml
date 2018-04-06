@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+hazelcast-client:
+  serverIp: "localhost"
+  aws:
+    enabled: false
+    insideAwsEnvironment: false
+    accessKey: ""
+    secretKey: ""
+    region: ""
+    hostHeader: ""
+    securityGroupName: ""
+    tagKey: ""
+    tagValue: ""
