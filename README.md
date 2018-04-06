@@ -11,8 +11,12 @@ $ docker run -p 8081:8080 -d hazelcast/management-center
 Do not forget to change the port if you have another service running on port 8081.
 
 ## Usage
-- Run the hazelcast-server application twice. (Change ports) <br />
+- Run the `hazelcast-server` application twice. (Change ports) <br />
 - The management center only accepts two instances. (free-layer)
-- Run the hazelcast-client application. (default port is 8082)
+- Run the `hazelcast-client` application. (default port is 8082)
+- See `hazelcast-client` `CacheController` to do some operations.
+- Access `http://localhost:8081/mancenter` to see the result of your actions.
+
+For obvious reasons I did not setted the AWS configuration, so, use your credentials to populate them.
 
 <b>Enjoy!</b>
