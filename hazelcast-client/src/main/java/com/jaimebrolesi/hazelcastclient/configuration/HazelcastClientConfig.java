@@ -14,7 +14,7 @@ import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Primary;
 
 /**
- * Application class used to start the Hazelcast like a client.
+ * Hazelcast client configuration class.
  *
  * @author Jaime Brolesi
  * Creation date: 05/04/2018
@@ -23,37 +23,6 @@ import org.springframework.context.annotation.Primary;
 @EnableCaching
 @DependsOn("hazelcastProperties")
 public class HazelcastClientConfig {
-
-//    @Value("${hazelcast-client.aws.enable}")
-//    private Boolean awsEnabled;
-//
-//    @Value("${hazelcast-client.inside.aws}")
-//    private Boolean insideAwsEnvironment;
-//
-//    @Value("${hazelcast-client.aws.accessKey}")
-//    private String awsAccessKey;
-//
-//    @Value("${hazelcast-client.aws.secretKey}")
-//    private String awsSecretKey;
-//
-//    @Value("${hazelcast-client.aws.region}")
-//    private String awsRegion;
-//
-//    @Value("${hazelcast-client.aws.hostHeader}")
-//    private String awsHostHeader;
-//
-//    @Value("${hazelcast-client.aws.securityGroupName}")
-//    private String awsSecurityGroupName;
-//
-//    @Value("${hazelcast-client.aws.tagKey}")
-//    private String awsTagKey;
-//
-//    @Value("${hazelcast-client.aws.tagValue}")
-//    private String awsTagValue;
-//
-//    @Value("${hazelcast-client.server.ip}")
-//    private String serverIp;
-
 
     private final HazelcastProperties hazelcastProperties;
 

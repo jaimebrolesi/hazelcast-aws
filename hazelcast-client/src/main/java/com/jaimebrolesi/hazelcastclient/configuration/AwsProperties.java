@@ -3,6 +3,12 @@ package com.jaimebrolesi.hazelcastclient.configuration;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Aws properties.
+ *
+ * @author Jaime Brolesi
+ * Creation date: 05/04/2018
+ */
 @Getter
 @Setter
 class AwsProperties {

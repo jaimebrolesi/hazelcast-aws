@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.*;
 
 /**
- * Application class used to start the Hazelcast like a client.
+ * Hazelcast repository.
  *
  * @author Jaime Brolesi
  * Creation date: 05/04/2018

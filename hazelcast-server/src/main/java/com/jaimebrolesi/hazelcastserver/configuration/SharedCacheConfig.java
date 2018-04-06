@@ -8,7 +8,7 @@ import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Property class to read all caches from application-sharedCaches.yml.
+ * Configuration class bases on application-sharedCaches.yml.
  *
  * @author Jaime Brolesi
  * Creation date: 04/04/2018
