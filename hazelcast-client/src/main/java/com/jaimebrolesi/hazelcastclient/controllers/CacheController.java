@@ -54,6 +54,7 @@ public class CacheController {
 
         return new HashMap<String, String>() {{
             put("foo", bar);
+            put("message", "Look your new cache on http://localhost:8081/mancenter");
         }};
     }
 }
