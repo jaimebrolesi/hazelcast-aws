@@ -17,4 +17,6 @@ Do not forget to change the port if you have another service running on port 808
 - See `hazelcast-client` `CacheController` to do some operations.
 - Access `http://localhost:8081/mancenter` to see the result of your actions.
 
+For obvious reasons I did not setted the AWS configuration, so, use your credentials to populate them.
+
 <b>Enjoy!</b>
