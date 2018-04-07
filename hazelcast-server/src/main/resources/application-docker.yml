@@ -1,0 +1,15 @@
+# Always use the sharedCaches profile to create the caches on startup
+spring:
+  profiles:
+    include: sharedCaches
+
+hazelcast-server:
+  mancenter:
+    enabled: true
+    url: http://mancenter:8080/mancenter
+  tcp:
+    enabled: false
+  multicast:
+    enabled: true
+  aws:
+    enabled: false

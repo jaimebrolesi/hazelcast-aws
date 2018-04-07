@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  mancenter:
+    image: "hazelcast/management-center"
+    ports:
+      - 8081:8080
+
+  hz-server:
+    image: "jaimebrolesi/hazelcast-server"
+    links:
+      - mancenter
+    depends_on:
+      - mancenter
+    # Use this ports if you want to use a web-client outside of docker environment
+#    ports:
+#      - 5701-5702:5701
+
+  hz-client:
+    image: "jaimebrolesi/hazelcast-client"
+    ports:
+      - 8080:8080
+    links:
+      - hz-server
+    depends_on:
+      - hz-server

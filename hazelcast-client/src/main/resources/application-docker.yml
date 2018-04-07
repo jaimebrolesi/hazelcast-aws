@@ -1,5 +1,5 @@
 hazelcast-client:
-  serverIp: "localhost"
+  serverIp: "hz-server"
   aws:
     enabled: false
     insideAwsEnvironment: false

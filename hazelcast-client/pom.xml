@@ -69,7 +69,7 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <dockerDirectory>src/main/docker</dockerDirectory>
+                            <dockerDirectory>${project.basedir}</dockerDirectory>
                             <imageName>jaimebrolesi/${project.artifactId}</imageName>
                             <resources>
                                 <resource>
